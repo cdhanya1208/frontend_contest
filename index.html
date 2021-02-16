@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACBOOK AI CHIP</title>
+    <link rel="stylesheet" href="css_files/nav_css.css">
+    <link rel="stylesheet" href="css_files/3dimage.css">
+   </head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="featues.html">GALLERY</a></li>
+            </ul>
+    </div>
+    <div class="slideshow-container" id="maincontainer">
+
+        <div class="mySlides fade">
+          
+          <img src="images/pic1.jpg" style="width:70%;height:70%;">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="images/pic3.jpg" style="width:70%;height:70%;">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="images/pic4.jpg" style="width: 70%;height: 70%;">
+          
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <div>
+            <h1 style="color:antiquewhite; text-align: center;">Small Chip.  Giant leap.</h1>
+            </div>
+            <div>
+                <h2 style="color:antiquewhite;text-align: center ;padding: 50px; margin: 20px;border: 15px solid white; border-radius: 25px;">
+                   <font style="color:aquamarine"> M1 is here!!!</font> Our first chip designed specifically for Mac, it delivers incredible performance, custom technologies and revolutionary power efficiency.  With a giant leap in performance per watt, every Mac with M1 is transformed into a completely different class of product. This isn’t an upgrade. It’s a breakthrough.
+                </div>
+                <div class="container">
+                    <img src="images/pic5.jpg" class="image">
+                    <div class="overlay">
+                     <b> <div class="text">With a powerful 8‑core GPU, machine learning accelerators and the Neural Engine, the entire M1 chip is designed to excel at machine learning. </div>
+                    </div></b>
+                  </div>
+                
+                <h1 style="color:antiquewhite;font-size:xx-large; text-align: center; margin-top: 100px;">The world’s fastest integrated graphics in a personal computer.</h1>
+                
+
+                     <div class="sampleimg2">
+                        <img src="images/pic6.jpg" class="image">
+                    </div>
+                    <!-- <div class="sampleimg">
+                        <img src="images/pic7.jpg" class="image">
+            
+                         </div> -->
+                        
+       
+    </body>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+</html>
